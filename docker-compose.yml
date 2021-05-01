@@ -1,0 +1,17 @@
+version: "3"
+services:
+  python:
+    build: "./bin/python"
+    container_name: "python-aio"
+    volumes:
+      - ./python:/config/python
+      - ./python/letsencrypt:/etc/letsencrypt
+    environment:
+      - URL=mydomain.com
+      - EMAIL=myname@mydomain.com
+    ports:
+      - 80:80
+      - 443:443
+      - 5556:5556
+      - 5557:5557
+    command: ./config/python/start.sh
