@@ -1,5 +1,5 @@
 
-A proof of concept for a distributed object tracking system I made for a networking class. This project uses several instances of an object tracking algorithm, with each instance working with a different support image, with each support image being an cropped image of the object being tracked.  These supports can come from different objects to allow simultaenous tracking of different objects at once or from the same object to enhance tracking performance.  
+A proof of concept for a distributed object tracking system I made for a networking class. Several instances of an object tracking algorithm are used, with each instance working with a different support image.  These supports can come from different objects to allow simultaenous tracking of different objects at once or from the same object to enhance tracking performance.  
 
 ![Web page](./image1.png)
 
